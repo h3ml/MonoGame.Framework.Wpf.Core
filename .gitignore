@@ -1,0 +1,16 @@
+# Visual Studio
+*.db
+*.opendb
+*.csproj.user
+.vs/
+.vscode/
+
+# Sublime text
+*.sublime-project
+*.sublime-workspace
+
+# Directories we don't ever want to commit
+bin
+obj
+temp
+ipch

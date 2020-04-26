@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Product>MonoGame</Product>
+    <PackageLicenseFile>LICENCE</PackageLicenseFile>
+    <PackageProjectUrl>https://www.monogame.net/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/h3ml/MonoGame.Framework.Wpf.Core</RepositoryUrl>
+    <Company>Contoso</Company>
+    <Authors>Contoso</Authors>
+    <Copyright></Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="View\**" />
+    <EmbeddedResource Remove="View\**" />
+    <None Remove="View\**" />
+    <None Include="..\LICENCE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <Page Remove="View\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Framework.WindowsDX.Core" Version="3.8.0.3" />
+  </ItemGroup>
+
+</Project>
